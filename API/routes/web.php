@@ -14,26 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::post('/create', function () {
-    return view('create');
-});
-
-Route::post('/update', function () {
-    return view('update');
-});
-
-Route::get('/read', function () {
-    return view('read');
-});
-
-Route::delete('/delete', function () {
-    return view('delete');
-});
-
-
-Route::get('/test', function () {
-    return view('test');
+Route::get('/', function () {
+    return view('index');
 });
