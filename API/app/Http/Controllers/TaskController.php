@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class TaskController extends Controller
 {
     public function read(){
-        $tasks = Task::all();
-        return response()->json($tasks);
+        $task = Task::all();
+        return response()->json($task);
     }
 
     public function readById($id) {
-        $tasks = Task::findOrFail($id);
-        return response()->json($tasks);
+        $task = Task::findOrFail($id);
+        return response()->json($task);
     } 
 
     public function create(Request $request){

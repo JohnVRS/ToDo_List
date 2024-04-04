@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/', function () {
-    return view('index');
-});
+
+Route::get('/task/read', 'App\Http\Controllers\TaskController@read');
+Route::get('/task/{id}', 'App\Http\Controllers\TaskController@readById');
+
+Route::post('/task/create', 'App\Http\Controllers\TaskController@create')->name('task.create');
+
+
+

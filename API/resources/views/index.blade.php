@@ -3,14 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista de Tarefas</title>
+    <title>Menu API</title>
 </head>
 <body>
-    <h1>Lista de Tarefas</h1>
+    <h1>Menuzada</h1>
+
     <ul>
-        @foreach ($tasks as $task)
-            <li>{{ $task->title }}</li>
-        @endforeach
+        <li><a href="http://127.0.0.1:8000/task/read"> Mostrar todos o dados</a></li>
+        
+        <li><a href="http://127.0.0.1:8000/task/create"> inserir dado</a></li>
     </ul>
+    
 </body>
 </html>
